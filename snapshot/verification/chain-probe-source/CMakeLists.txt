@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.20)
+project(esm_legacy_chain_probe LANGUAGES CXX)
+add_executable(chain_probe probe.cpp)
+target_compile_features(chain_probe PRIVATE cxx_std_20)
+target_include_directories(chain_probe PRIVATE ../source/legacy-chain/include)
